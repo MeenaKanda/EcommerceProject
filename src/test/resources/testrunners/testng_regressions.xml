@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Ecommerce Test Regression Suite" thread-count="4" parallel="tests" verbose="4">
+	
+	<listeners>
+
+		
+		<listener class-name="com.qa.ecommerce.listeners.ExtentReportListener" />
+		<listener class-name="com.qa.ecommerce.listeners.TestAllureListener" />
+		<listener class-name="com.qa.ecommerce.listeners.AnnotationTransformer" />
+	</listeners>
+
+
+ <!--   <test
+		name="Home Page Test">
+		<classes>
+			<class name="com.qa.ecommerce.tests.EcomHomePageTest" />
+		</classes>
+	</test>
+	<test name="Accounts Page Test_edge">
+		<classes>
+			<class name="com.qa.ecommerce.tests.EcomAccountPageTest" />
+		</classes>
+	</test>
+	-->
+	 <test name="Login Page Test">
+		<classes>
+			<class name="com.qa.ecommerce.tests.EcomLoginPageTest" />
+		</classes>
+	</test>
+<!-- 
+	<test
+		name="ProductInfo Page Test">
+		<classes>
+			<class name="com.qa.ecommerce.tests.EcomProductInfoPageTest" />
+		</classes>
+	</test>
+	<test
+		name="Search Page Test">
+		<classes>
+			<class name="com.qa.ecommerce.tests.EcomSearchPageTest" />
+		</classes>
+	</test>
+	
+	<test
+		name="Checkout Page Test">
+		<classes>
+			<class name="com.qa.ecommerce.tests.EcomCheckOutPageTest" />
+		</classes>
+	</test>
+	-->
+	 </suite>

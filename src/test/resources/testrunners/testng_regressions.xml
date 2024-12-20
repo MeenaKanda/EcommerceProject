@@ -17,13 +17,14 @@
 		<classes>
 			<class name="com.qa.ecommerce.tests.EcomHomePageTest" />
 		</classes>
-	</test>
+	</test> 
+	-->
 	<test name="Accounts Page Test_edge">
 		<classes>
 			<class name="com.qa.ecommerce.tests.EcomAccountPageTest" />
 		</classes>
 	</test>
-	-->
+	
 	 <test name="Login Page Test">
 		<classes>
 			<class name="com.qa.ecommerce.tests.EcomLoginPageTest" />
@@ -35,7 +36,7 @@
 		<classes>
 			<class name="com.qa.ecommerce.tests.EcomProductInfoPageTest" />
 		</classes>
-	</test>
+	</test> 
 	<test
 		name="Search Page Test">
 		<classes>

@@ -12,13 +12,13 @@
 	</listeners>
 
 
- <!--   <test
+    <test
 		name="Home Page Test">
 		<classes>
 			<class name="com.qa.ecommerce.tests.EcomHomePageTest" />
 		</classes>
 	</test> 
-	-->
+	
 	
 	<test name="Login Page Test">
 		<classes>
@@ -33,7 +33,7 @@
 	</test>
 	
 	
-<!-- 
+ 
 	<test
 		name="ProductInfo Page Test">
 		<classes>
@@ -53,5 +53,5 @@
 			<class name="com.qa.ecommerce.tests.EcomCheckOutPageTest" />
 		</classes>
 	</test>
-	-->
+	
 	 </suite>

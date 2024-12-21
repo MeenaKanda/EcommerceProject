@@ -19,17 +19,20 @@
 		</classes>
 	</test> 
 	-->
+	
+	<test name="Login Page Test">
+		<classes>
+			<class name="com.qa.ecommerce.tests.EcomLoginPageTest" />
+		</classes>
+	</test>
+
 	<test name="Accounts Page Test_edge">
 		<classes>
 			<class name="com.qa.ecommerce.tests.EcomAccountPageTest" />
 		</classes>
 	</test>
 	
-	 <test name="Login Page Test">
-		<classes>
-			<class name="com.qa.ecommerce.tests.EcomLoginPageTest" />
-		</classes>
-	</test>
+	
 <!-- 
 	<test
 		name="ProductInfo Page Test">

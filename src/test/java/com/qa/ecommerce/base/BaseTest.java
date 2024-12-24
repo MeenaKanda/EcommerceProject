@@ -5,6 +5,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.asserts.SoftAssert;
 
 import com.qa.ecommerce.factory.DriverFactory;
@@ -39,12 +40,17 @@ public class BaseTest {
 	protected SoftAssert softAssert;
 	
 	
-	
+	@Parameters({"browser","browserversion", "testcasename"})
 	@BeforeTest
 	
-	public void setup() {
+	public void setup(String browserName, String browserVersion, String testcaseName) {
 		dr = new DriverFactory();
 		prop = dr.initProp();
+		if(browserName!=null) {
+			prop.setProperty("browser", browserName);
+			prop.setProperty("browserversion", browserVersion);
+			prop.setProperty("testcasename", testcaseName);
+		}
 		driver = dr.initDriver(prop);
 //		homePage = new EcomHomePage(driver);
 		loginPage = new EcomLoginPage(driver);

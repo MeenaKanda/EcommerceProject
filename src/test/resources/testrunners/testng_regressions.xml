@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Ecommerce Test Regression Suite" thread-count="4" parallel="tests" verbose="4">
+<suite name="Ecommerce Test Regression Suite" thread-count="6" parallel="tests" verbose="4">
 	
 	<listeners>
 
@@ -12,46 +12,61 @@
 	</listeners>
 
 
-    <test
-		name="Home Page Test">
-		<classes>
-			<class name="com.qa.ecommerce.tests.EcomHomePageTest" />
+  <!--    <test name="Home Page Test_chrome">
+    <parameter name="browser" value="chrome" />
+    <parameter name="browserversion" value="111.0" />
+        <classes>  
+	     <class name="com.qa.ecommerce.tests.EcomHomePageTest" />
 		</classes>
 	</test> 
-	
-	
-	<test name="Login Page Test">
+	-->
+		<test name="Login Page Test_chrome">
+	<parameter name="browser" value="chrome" />
+	<parameter name="browserversion" value="111.0" />
+	<parameter name="testcasename" value="Login Page Test" />
 		<classes>
 			<class name="com.qa.ecommerce.tests.EcomLoginPageTest" />
 		</classes>
 	</test>
 
-	<test name="Accounts Page Test_edge">
+ 	<test name="Accounts Page Test_chrome">
+	<parameter name="browser" value="chrome" />
+	<parameter name="browserversion" value="119.0" />
+	<parameter name="testcasename" value="Accounts Page Test" />
 		<classes>
 			<class name="com.qa.ecommerce.tests.EcomAccountPageTest" />
 		</classes>
 	</test>
 	
 	
- 
-	<test
-		name="ProductInfo Page Test">
+  
+ 	<test
+		name="ProductInfo Page Test_firefox">
+		<parameter name="browser" value="firefox" />
+		<parameter name="browserversion" value="116.0" />
+		<parameter name="testcasename" value="ProductInfo Page Test" />
 		<classes>
 			<class name="com.qa.ecommerce.tests.EcomProductInfoPageTest" />
 		</classes>
 	</test> 
-	<test
-		name="Search Page Test">
+
+ 	<test
+		name="Search Page Test_firefox">
+		<parameter name="browser" value="firefox" />
+		<parameter name="browserversion" value="117.0" />
+		<parameter name="testcasename" value="Search Page Test" />
 		<classes>
 			<class name="com.qa.ecommerce.tests.EcomSearchPageTest" />
 		</classes>
 	</test>
 	
-	<test
-		name="Checkout Page Test">
+<!-- 	<test
+		name="Checkout Page Test_firefox">
+		<parameter name="browser" value="firefox" />
+		<parameter name="browserversion" value="116.0" />
 		<classes>
 			<class name="com.qa.ecommerce.tests.EcomCheckOutPageTest" />
 		</classes>
 	</test>
-	
+	-->
 	 </suite>

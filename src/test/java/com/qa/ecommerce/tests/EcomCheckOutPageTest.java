@@ -1,6 +1,8 @@
 package com.qa.ecommerce.tests;
 
-public class EcomCheckOutPageTest {
+import com.qa.ecommerce.base.BaseTest;
+
+public class EcomCheckOutPageTest extends BaseTest{
 	
 	
 }
